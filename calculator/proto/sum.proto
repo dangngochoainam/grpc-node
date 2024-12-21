@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message SumRequest {
+    int32 number_first = 1;
+    int32 number_second = 2;
+}
+
+message SumResponse {
+    int32 result = 1;
+}
