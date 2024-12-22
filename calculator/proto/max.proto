@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message MaxRequest {
+    int32 number = 1;
+}
+
+message MaxResponse {
+    int32 output = 1;
+}

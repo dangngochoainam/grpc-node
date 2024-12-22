@@ -3,7 +3,15 @@ syntax = "proto3";
 package calculator;
 
 import "sum.proto";
+import "primes.proto";
+import "avg.proto";
+import "max.proto";
+import "deadline.proto";
 
 service CalculatorService {
     rpc Sum (SumRequest) returns (SumResponse);
+    rpc Primes (PrimesRequest) returns (stream PrimesResponse);
+    rpc Avg (stream AvgRequest) returns (AvgResponse);
+    rpc Max (stream MaxRequest) returns (stream MaxResponse);
+    rpc Deadline (DeadlineRequest) returns (DeadlineResponse);
 }

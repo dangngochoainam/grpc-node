@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message DeadlineRequest {
+    int32 number = 1;
+}
+
+message DeadlineResponse {
+    int32 output = 1;
+}
